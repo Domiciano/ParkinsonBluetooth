@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:keepScreenOn="true"
+    android:gravity="center_horizontal"
+    tools:context="i2t.icesi.parkinsonbluetooth.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#2c3e50">
+
+        <TextView
+            android:text="Precisión"
+            android:gravity="center_vertical"
+            android:textSize="20dp"
+            android:textColor="#aaa"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/boton_desconectar"
+            android:gravity="center"
+            android:text=""
+            android:layout_toLeftOf="@+id/btn_BTON"
+            android:enabled="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/desconectar"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text=""
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bluetooth"
+            android:id="@+id/btn_BTON"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/cambio"
+            android:enabled="false"/>
+
+
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20px"
+            android:layout_centerVertical="true"
+            android:backgroundTint="#4bA2db"
+            android:background="@drawable/change"
+            android:onClick="onClick"
+            android:layout_toLeftOf="@+id/cedula"
+            android:scaleX="-1"
+            android:id="@+id/cambio"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20px"
+            android:layout_centerVertical="true"
+            android:backgroundTint="#4bA2db"
+            android:background="@drawable/assing"
+            android:onClick="onClick"
+            android:layout_toLeftOf="@+id/modolive_btn"
+            android:scaleX="-1"
+            android:id="@+id/cedula"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:backgroundTint="#4bA2db"
+            android:background="@drawable/modolive"
+            android:onClick="onClick"
+            android:id="@+id/modolive_btn"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/back"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/boton_izquierda_higher"
+                android:gravity="center"
+                android:text=""
+                android:enabled="false"
+                android:background="@drawable/conectar"/>
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/boton_izquierda"
+                android:gravity="center"
+                android:text=""
+                android:enabled="false"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/conectar"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="10dp">
+
+            <Button
+
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/boton_derecha"
+
+                android:text=""
+                android:enabled="false"
+                android:background="@drawable/conectar" />
+
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/boton_derecha_higher"
+                android:gravity="center"
+                android:text=""
+                android:enabled="false"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/conectar"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No olvide vincular las manillas izquierda y derecha"
+        android:padding="8dp"
+        android:gravity="center"
+        android:background="#000"
+        android:textColor="#fff"
+        android:id="@+id/info"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/info_manoizquieda"
+            android:gravity="center"
+            android:text="Segundos\n"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/info_manoderecha"
+            android:gravity="center"
+            android:text="Segundos\n"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar"
+        android:id="@+id/iniciar"
+        android:enabled="false"
+        android:padding="8dp"/>
+
+
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lista_dispositivos"
+        android:visibility="gone"></ListView>
+
+
+</LinearLayout>

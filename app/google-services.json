@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "916517325077",
+    "firebase_url": "https://parkinsonbluetooth.firebaseio.com",
+    "project_id": "parkinsonbluetooth",
+    "storage_bucket": "parkinsonbluetooth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916517325077:android:b6e6c77e522d9e51",
+        "android_client_info": {
+          "package_name": "i2t.icesi.parkinsonbluetooth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916517325077-ge1eafcb1er14bp8fed839kdhtoi9o2s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "i2t.icesi.parkinsonbluetooth",
+            "certificate_hash": "a2f49a570a60674090799825709f511a78546538"
+          }
+        },
+        {
+          "client_id": "916517325077-h1aouhak2iov4p2otrc87j0r8f211kbn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTN2M6uY6WjvCrUykze6exMZmmTV1B5g0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916517325077-h1aouhak2iov4p2otrc87j0r8f211kbn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
